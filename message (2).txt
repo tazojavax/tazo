@@ -1,0 +1,357 @@
+# TIC TAC TOE
+print("              NOTE  :    ")
+print("--------------------------------")
+print("only write in numbers and use: 1, 2, 3, 4, 5, 6, 7, 8, 9")
+print("this game is not rigged!")
+print("----------------------")
+print("type 1 for single player")
+print("type 2 for multiple players")
+playStyle = int(input("would you like to play singleplayer or multiplayer ? "))
+if playStyle == 1:
+    one = 1
+    two = 2
+    three = 3
+    four = 4
+    five = 5
+    six = 6
+    seven = 7
+    eight = 8
+    nine = 9
+
+
+    def board():
+        print(f"    {one} │ {two} │ {three}")
+        print("  ─────────────")
+        print(f"    {four} │ {five} │ {six}")
+        print("  ─────────────")
+        print(f"    {seven} │ {eight} │ {nine}")
+
+
+    print(board())
+
+    while True:
+        player_pick = input("Pick a number: ")
+        if one == two == three or four == five == six or seven == eight == nine or one == four == seven or two == five == eight or three == six == nine or one == five == nine or three == five == seven:
+            print("you win!")
+
+        if player_pick == "1":
+            one = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three or four == five == six or seven == eight == nine or one == four == seven or two == five == eight or three == six == nine or one == five == nine or three == five == seven:
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "2":
+            two = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "3":
+            three = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "4":
+            four = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "5":
+            five = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "6":
+            six = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "7":
+            seven = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+
+        elif player_pick == "8":
+            eight = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+        elif player_pick == "9":
+            nine = "X"
+            if one != "X" and one != "◯":
+                one = "◯"
+            elif two != "X" and two != "◯":
+                two = "◯"
+            elif three != "X" and three != "◯":
+                three = "◯"
+            elif four != "X" and four != "◯":
+                four = "◯"
+            elif five != "X" and five != "◯":
+                five = "◯"
+            elif six != "X" and six != "◯":
+                six = "◯"
+            elif seven != "X" and seven != "◯":
+                seven = "◯"
+            elif eight != "X" and eight != "◯":
+                eight = "◯"
+            elif nine != "X" and nine != "◯":
+                nine = "◯"
+
+            print(board())
+            if one == two == three == 'X' or four == five == six == 'X' or seven == eight == nine == 'X' or one == four == seven == 'X' or two == five == eight == 'X' or three == six == nine == 'X' or one == five == nine == 'X' or three == five == seven == 'X':
+                print("you win!")
+                break
+            elif one == two == three == '◯' or four == five == six == '◯' or seven == eight == nine == '◯' or one == four == seven == '◯' or two == five == eight == '◯' or three == six == nine == '◯' or one == five == nine == '◯' or three == five == seven == '◯':
+                print("you lose!")
+                break
+            # თაზოს კოდი
+elif playStyle == 2:
+
+    one = 1
+    two = 2
+    three = 3
+    four = 4
+    five = 5
+    six = 6
+    seven = 7
+    eight = 8
+    nine = 9
+
+
+    def board():
+        print(f"    {one} │ {two} │ {three}")
+        print("  ─────────────")
+        print(f"    {four} │ {five} │ {six}")
+        print("  ─────────────")
+        print(f"    {seven} │ {eight} │ {nine}")
+
+
+    print(board())
+
+
+    current_player = "X"
+
+
+    def switch_player():
+        global current_player
+        if current_player == "X":
+            current_player = "◯"
+        else:
+            current_player = "X"
+
+
+    while True:
+        player_pick = input(f"Player {current_player}, pick a number: ")
+
+        if player_pick == "1" and one not in ["X", "◯"]:
+            one = current_player
+        elif player_pick == "2" and two not in ["X", "◯"]:
+            two = current_player
+        elif player_pick == "3" and three not in ["X", "◯"]:
+            three = current_player
+        elif player_pick == "4" and four not in ["X", "◯"]:
+            four = current_player
+        elif player_pick == "5" and five not in ["X", "◯"]:
+            five = current_player
+        elif player_pick == "6" and six not in ["X", "◯"]:
+            six = current_player
+        elif player_pick == "7" and seven not in ["X", "◯"]:
+            seven = current_player
+        elif player_pick == "8" and eight not in ["X", "◯"]:
+            eight = current_player
+        elif player_pick == "9" and nine not in ["X", "◯"]:
+            nine = current_player
+        else:
+            print("Invalid move!")
+            continue
+
+        board()
+
+        if one == two == three or four == five == six or seven == eight == nine or \
+                one == four == seven or two == five == eight or three == six == nine or \
+                one == five == nine or three == five == seven:
+            print(f"Player {current_player} wins!")
+            break
+
+        switch_player()
